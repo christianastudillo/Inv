@@ -24,19 +24,19 @@ button,a{font:inherit}.phone{width:min(100%,430px);height:min(820px,calc(100dvh 
 <main class="phone" aria-label="Invitación para tomar un café">
 <header class="topbar"><div class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5Zm0 2c-4.2 0-7.5 2.2-7.5 5v1.5h15V19c0-2.8-3.3-5-7.5-5Z"/></svg></div><div class="identity"><div class="name" id="contactName">Christian</div><div class="status" id="status" aria-live="polite">en línea</div></div><button class="replay" id="replay" type="button" aria-label="Volver a empezar la conversación" title="Volver a empezar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></header>
 <section class="chat" id="chat" aria-label="Conversación"><div class="day">hoy</div><div class="typing" id="typing" aria-label="Escribiendo"><i></i><i></i><i></i></div></section>
-<footer class="footer" id="footer"><p>¿Aceptas el cafecito tú y yo?</p><a class="accept" id="accept" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="false">Acepto</a><p class="hint" id="hint" role="status"></p></footer></main>
+<footer class="footer" id="footer"><p>¿Te gustaria?</p><a class="accept" id="accept" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="false">Si es un sí, dale Click aquí </a><p class="hint" id="hint" role="status"></p></footer></main>
 <script>
 // PERSONALIZA ESTOS DATOS ANTES DE COMPARTIR LA PÁGINA.
 const CONFIG={
  nombre:"Christian",
  // Número internacional, solo dígitos y código de país. Ejemplo: "593991234567".
  whatsapp:"593988477319",
- lugar:"ese cafecito que tanto nos gusta",
- mensajeWhatsApp:"¡Sí, me encantaría! ☕",
+ lugar:"Un Cafecito",
+ mensajeWhatsApp:"¡Sí, acepto! ",
  mensajes:[
-  {texto:"Holaa",pausa:350,escribiendo:850},
-  {texto:"Estaba pensando en...",pausa:450,escribiendo:1150},
-  {texto:"¿Y si vamos a tomar un cafecito? :)",pausa:0,escribiendo:1450}
+  {texto:"Holaa Mary",pausa:350,escribiendo:850},
+  {texto:"Estaba pensando en que...",pausa:450,escribiendo:1150},
+  {texto:"Y si vamos a tomar un cafecito? :)",pausa:0,escribiendo:1450}
  ]
 };
 const chat=document.getElementById("chat"),typing=document.getElementById("typing"),footer=document.getElementById("footer"),status=document.getElementById("status"),accept=document.getElementById("accept"),hint=document.getElementById("hint");
